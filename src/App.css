@@ -401,6 +401,7 @@ ul {
   list-style: none;
 }
 
+
 @font-face {
   font-family: 'Trebuchet MS Regular';
   src: url('../src/assets/fonts/TrebuchetMS.eot');
@@ -420,6 +421,15 @@ ul {
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Exo 2.0 Thin';
+  src: url('../src/assets/fonts/Exo20-Thin.eot');
+  src: url('../src/assets/fonts/Exo20-Thin.eot?#iefix') format('embedded-opentype'),
+  url('../src/assets/fonts/Exo20-Thin.woff') format('woff'),
+  url('../src/assets/fonts/Exo20-Thin.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 * {
   box-sizing: border-box;
@@ -431,7 +441,7 @@ html {
 
 body {
   background: url("../public/images/Pattern@2x.png");
-  font-family: 'Trebuchet MS Regular', serif;
+  font-family: 'Trebuchet MS Regular', sans-serif;
   margin: 0 auto;
 }
 
