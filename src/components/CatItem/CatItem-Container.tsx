@@ -1,4 +1,4 @@
-import React, {useRef, useState} from 'react';
+import React, { useRef, useState } from 'react';
 import CatItemView from './CatItem-View';
 import { ICat } from '../CatBlock/CatBlock-View';
 let isClicked = false;
@@ -37,11 +37,11 @@ const CatItemContainer = ({ id, description, title, type, amount, present, weigh
 
   const dontWantToBuy = () => {
     insideBlockRef.current.style.backgroundImage =
-        'linear-gradient(to right, transparent 15%, #E52E7A 0%, #E52E7A 100%), linear-gradient(to bottom, transparent 9%, #E52E7A 0%, #E52E7A 100%)';
+      'linear-gradient(to right, transparent 15%, #E52E7A 0%, #E52E7A 100%), linear-gradient(to bottom, transparent 9%, #E52E7A 0%, #E52E7A 100%)';
     insideBlockRef.current.style.borderBottom = '4px solid #E52E7A';
     insideBlockRef.current.style.borderRight = '4px solid #E52E7A';
     catBlockRef.current.style.background =
-        'linear-gradient(135deg, transparent 38px, #F2F2F2 20px), linear-gradient(135deg, transparent 32px, #E52E7A 30px)';
+      'linear-gradient(135deg, transparent 38px, #F2F2F2 20px), linear-gradient(135deg, transparent 32px, #E52E7A 30px)';
     chooseRightSelectedText();
     dotRef.current.style.background = '#E52E7A';
     descriptionRef.current.innerText = 'Котэ не одобряет?';
@@ -51,11 +51,11 @@ const CatItemContainer = ({ id, description, title, type, amount, present, weigh
   const selectItemToBuy = (event) => {
     event.preventDefault();
     insideBlockRef.current.style.backgroundImage =
-        'linear-gradient(to right, transparent 15%, #D91667 0%, #D91667 100%), linear-gradient(to bottom, transparent 9%, #D91667 0%, #D91667 100%)';
+      'linear-gradient(to right, transparent 15%, #D91667 0%, #D91667 100%), linear-gradient(to bottom, transparent 9%, #D91667 0%, #D91667 100%)';
     insideBlockRef.current.style.borderBottom = '4px solid #D91667';
     insideBlockRef.current.style.borderRight = '4px solid #D91667';
     catBlockRef.current.style.background =
-        'linear-gradient(135deg, transparent 38px, #F2F2F2 20px), linear-gradient(135deg, transparent 32px, #D91667 30px)';
+      'linear-gradient(135deg, transparent 38px, #F2F2F2 20px), linear-gradient(135deg, transparent 32px, #D91667 30px)';
     chooseRightSelectedText();
     dotRef.current.style.background = '#D91667';
   };
@@ -74,11 +74,11 @@ const CatItemContainer = ({ id, description, title, type, amount, present, weigh
     if (disabledBlock) {
       insideBlockRef.current.style.opacity = '0.5';
       insideBlockRef.current.style.backgroundImage =
-          'linear-gradient(to right, transparent 15%, #B3B3B3 0%, #B3B3B3 100%), linear-gradient(to bottom, transparent 9%, #B3B3B3 0%, #B3B3B3 100%)';
+        'linear-gradient(to right, transparent 15%, #B3B3B3 0%, #B3B3B3 100%), linear-gradient(to bottom, transparent 9%, #B3B3B3 0%, #B3B3B3 100%)';
       insideBlockRef.current.style.borderBottom = '4px solid #B3B3B3';
       insideBlockRef.current.style.borderRight = '4px solid #B3B3B3';
       catBlockRef.current.style.background =
-          'linear-gradient(135deg, transparent 38px, #F2F2F2 20px), linear-gradient(135deg, transparent 32px, #B3B3B3 30px)';
+        'linear-gradient(135deg, transparent 38px, #F2F2F2 20px), linear-gradient(135deg, transparent 32px, #B3B3B3 30px)';
       chooseRightSelectedText();
       dotRef.current.style.background = '#F2F2F2';
       chooseDisableSelectedText();

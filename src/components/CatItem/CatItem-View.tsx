@@ -1,7 +1,24 @@
 import React from 'react';
 
-const CatItemView = ({ id, description, title, type, amount, present, weight, catBlockRef, blurElementHandler, insideBlockRef, descriptionRef, titleRef, dotRef, linkRef, selectItemToBuy, disableItemRef, setDisableItem }) => {
-
+const CatItemView = ({
+  id,
+  description,
+  title,
+  type,
+  amount,
+  present,
+  weight,
+  catBlockRef,
+  blurElementHandler,
+  insideBlockRef,
+  descriptionRef,
+  titleRef,
+  dotRef,
+  linkRef,
+  selectItemToBuy,
+  disableItemRef,
+  setDisableItem,
+}) => {
   return (
     <>
       <article className="cat-block-content">
